@@ -1,3 +1,24 @@
+/**
+ * 简易html模板
+ * @example
+ * html:
+ *  <div id='TPL'>
+ *  <% var data = this.data;%>
+ *  <% if(data.a == 0) %>
+ *      <span>
+ *      <%=data.a%>
+ *      </span>
+ *  <% } else { %>
+ *       <div>
+ *           <%=data.b%>
+ *       </div>
+ *  <% } %>
+ *  </div>
+ *
+ *  js:
+ *  var htmlStr = parse(document.getElementById('TPL').innerHTML, {a : 0, b : 12});
+ *
+ */
 var cache = {};
 function parse(str, data){
     if (!cache[str] ){
