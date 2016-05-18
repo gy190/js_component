@@ -1,5 +1,6 @@
 /**
  * 简易html模板
+ * 
  * @example
  * html:
  *  <div id='TPL'>
