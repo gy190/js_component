@@ -4,16 +4,16 @@
  * @example
  * html:
  *  <div id='TPL'>
- *  <% var data = this.data;%>
- *  <% if(data.a == 0) %>
+ *  <? var data = this.data;?>
+ *  <? if(data.a == 0) ?>
  *      <span>
- *      <%=data.a%>
+ *      <?=data.a?>
  *      </span>
- *  <% } else { %>
+ *  <? } else { ?>
  *       <div>
- *           <%=data.b%>
+ *           <?=data.b?>
  *       </div>
- *  <% } %>
+ *  <? } ?>
  *  </div>
  *
  *  js:
